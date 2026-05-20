@@ -1,5 +1,39 @@
 jQuery(document).ready(function( $ ) {
 
+  var themeStorageKey = 'aicps-color-theme';
+  var themeOptions = ['dark', 'gray-clear', 'blue-clear', 'green-clear'];
+  var $themeButtons = $('[data-theme-option]');
+
+  function getThemeValue(name, fallback) {
+    var value = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return value || fallback;
+  }
+
+  function setTheme(theme, persist) {
+    if (themeOptions.indexOf(theme) === -1) {
+      theme = 'dark';
+    }
+
+    document.documentElement.setAttribute('data-theme', theme);
+
+    if (persist) {
+      try {
+        localStorage.setItem(themeStorageKey, theme);
+      } catch (e) {}
+    }
+
+    $themeButtons.each(function() {
+      var isActive = $(this).data('theme-option') === theme;
+      $(this).toggleClass('is-active', isActive).attr('aria-pressed', isActive ? 'true' : 'false');
+    });
+  }
+
+  setTheme(document.documentElement.getAttribute('data-theme') || 'dark', false);
+
+  $themeButtons.on('click', function() {
+    setTheme($(this).data('theme-option'), true);
+  });
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -37,9 +71,9 @@ jQuery(document).ready(function( $ ) {
   // Initialize Venobox
   $('.venobox').venobox({
     bgcolor: '',
-    overlayColor: 'rgba(6, 12, 34, 0.85)',
+    overlayColor: getThemeValue('--theme-venobox-overlay', 'rgba(6, 12, 34, 0.85)'),
     closeBackground: '',
-    closeColor: '#fff'
+    closeColor: getThemeValue('--theme-on-strong', '#fff')
   });
 
   // Initiate superfish on nav menu

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AICPS'26 - The Second IEEE/International Conference on Artificial Intelligence and Cyber Physical Systems</title>
+  <title>AICPS'26 - The Second International Conference on Artificial Intelligence and Cyber Physical Systems</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -27,6 +27,23 @@
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/venobox/venobox.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <script>
+    (function () {
+      var theme = 'dark';
+      var allowedThemes = ['dark', 'gray-clear', 'blue-clear', 'green-clear'];
+
+      try {
+        theme = localStorage.getItem('aicps-color-theme') || theme;
+      } catch (e) {}
+
+      if (allowedThemes.indexOf(theme) === -1) {
+        theme = 'dark';
+      }
+
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -113,7 +130,7 @@
   ============================-->
   <section id="intro">
     <div class="intro-container wow fadeIn">
-      <h1 class="mb-4 pb-0">The Second IEEE/International Conference on Artificial Intelligence and Cyber Physical Systems<br><span> AICPS'26</span> </h1>
+      <h1 class="mb-4 pb-0">The Second International Conference on Artificial Intelligence and Cyber Physical Systems<br><span> AICPS'26</span> </h1>
 	  
       <p class="mb-4 pb-0">14-15 December 2026, Oran, Algeria</p>
       <a href="https://youtu.be/Y3NgSeS4sUM" class="venobox play-btn mb-4" data-vbtype="video"
@@ -1857,6 +1874,13 @@
       </div>
     </div>
   </footer><!-- #footer -->
+
+  <div class="theme-switcher" role="group" aria-label="Color theme">
+    <button type="button" class="theme-switcher__button theme-switcher__button--dark" data-theme-option="dark" aria-label="Dark colors" title="Dark colors"></button>
+    <button type="button" class="theme-switcher__button theme-switcher__button--gray" data-theme-option="gray-clear" aria-label="Clear gray colors" title="Clear gray colors"></button>
+    <button type="button" class="theme-switcher__button theme-switcher__button--blue" data-theme-option="blue-clear" aria-label="Clear blue colors" title="Clear blue colors"></button>
+    <button type="button" class="theme-switcher__button theme-switcher__button--green" data-theme-option="green-clear" aria-label="Clear green colors" title="Clear green colors"></button>
+  </div>
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
