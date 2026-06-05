@@ -1,65 +1,2030 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Under Construction</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
+  <meta charset="utf-8">
+  <title>AICPS'26 - The Second International Conference on Artificial Intelligence and Cyber Physical Systems</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 
-    .container {
-      max-width: 600px;
-      padding: 40px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-    }
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 0;
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
-    .icon {
-      font-size: 4rem;
-      margin-bottom: 20px;
-    }
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    footer {
-      margin-top: 30px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <script>
+    (function () {
+      var theme = 'dark';
+      var allowedThemes = ['dark', 'gray-clear', 'blue-clear', 'green-clear'];
+
+      try {
+        theme = localStorage.getItem('aicps-color-theme') || theme;
+      } catch (e) {}
+
+      if (allowedThemes.indexOf(theme) === -1) {
+        theme = 'dark';
+      }
+
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
-<body>
-  <main class="container">
-    <div class="icon">🚧</div>
-    <h1>Site Under Construction</h1>
-    <p>
-      We’re working hard to bring you something amazing.
-      Please check back soon.
-    </p>
 
-    <footer>
-      &copy; 2026 LABTEC-AI. All rights reserved.
-    </footer>
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/conference_logo2.png" style="width:150px; height:120px" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+		  <li><a href="#committees">Committees</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+		  <li><a href="#cfp">CFP</a></li>
+		  <li><a href="#submission">Submit</a></li>
+		  <!--<li><a href="#specialissues">Special Issues</a></li>-->
+          <!--<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Previous Editions
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://www.univ-mascara.dz/aicps2025/">AICPS'25</a></li>
+				</ul>
+		  </li>-->
+		  
+		  <li class="menu-has-children">
+			<a href="#">Previous Editions</a>
+			<ul>
+				<li><a href="https://www.univ-mascara.dz/aicps2025/" target="_blank">AICPS'25</a></li>
+			</ul>
+		  </li>
+		  
+		  <!--<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#schedule">Program</a></li>
+					<li><a href="#sponsors">Sponsors</a></li>
+					<li><a href="#dates">Important Dates</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#venue">Venue</a></li>
+				</ul>
+		  </li> -->
+		  
+		  <li class="menu-has-children">
+				  <a href="#">MORE</a>
+				  <ul>
+					<li><a href="#schedule">Program</a></li>
+					<li><a href="#sponsors">Sponsors</a></li>
+					<li><a href="#dates">Important Dates</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#venue">Venue</a></li>
+				  </ul>
+			</li>
+		  
+		  
+		  
+          <li class="buy-tickets"><a href="#buy-tickets">Register</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">The Second International Conference on Artificial Intelligence and Cyber Physical Systems<br><span> AICPS'26</span> </h1>
+	  
+      <p class="mb-4 pb-0">14-15 December 2026, Oran, Algeria</p>
+      <!--<a href="https://youtu.be/Y3NgSeS4sUM" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>-->
+		<a href="" class="play-btn mb-4" ></a>
+      <a href="#about" class="about-btn scrollto">About AICPS'26</a>
+    </div>
+  </section>
+
+  <main id="main"> 
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About <span> AICPS'26</span></h2>
+            <p>AICPS'26 provides an ideal platform for the presentation, discussion, critique, and exchange of innovative ideas among researchers, innovators, inventors, and industrial practitioners concerning the current challenges in the application of Cyber-Physical Systems (CPS) and Artificial Intelligence (AI). This first edition of AICPS will be held in hybrid mode, offering both in-person and virtual participation.</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>ENSO, ORAN, ALGERIA</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>14-15 December<br>2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	
+	<!--==========================
+      Venue Section
+    ============================-->
+    
+	<!--
+	<section id="venue" class="wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>Moments from AICPS'25</h2>
+		  
+		</div>
+          <p> Explore the complete photo collection on Flickr: <a href="https://flic.kr/ps/474Rqx" target="_blank">https://flic.kr/ps/474Rqx </a></p>
+       
+      </div>
+
+      <div class="container-fluid venue-gallery-container">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/aicps25-gallery/1.jpg" class="venobox" data-gall="aicps25-gallery">
+                <img src="img/aicps25-gallery/1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/aicps25-gallery/2.jpg" class="venobox" data-gall="aicps25-gallery">
+                <img src="img/aicps25-gallery/2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/aicps25-gallery/3.jpg" class="venobox" data-gall="aicps25-gallery">
+                <img src="img/aicps25-gallery/3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/aicps25-gallery/4.jpg" class="venobox" data-gall="aicps25-gallery">
+                <img src="img/aicps25-gallery/4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/aicps25-gallery/5.jpg" class="venobox" data-gall="aicps25-gallery">
+                <img src="img/aicps25-gallery/5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/aicps25-gallery/6.jpg" class="venobox" data-gall="aicps25-gallery">
+                <img src="img/aicps25-gallery/6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/aicps25-gallery/7.jpg" class="venobox" data-gall="aicps25-gallery">
+                <img src="img/aicps25-gallery/7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/aicps25-gallery/8.jpg" class="venobox" data-gall="aicps25-gallery">
+                <img src="img/aicps25-gallery/8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+	-->
+	<!--==========================
+      Committees section
+    ============================-->
+    <section id="committees" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Committees</h2>
+          <!--<p>Here are some of our speakers</p>-->
+        </div>
+	  </div>		
+	</section>
+		
+     <section id="hcommittees" class="wow fadeInUp">
+      <div class="container">
+			<div class="section-header">
+				<h3>Honorary Chairs</h3>
+				<!--<p>Here are some of our speakers</p>-->
+			</div>
+		
+		<div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/director.jpg" alt="Pr. Recor of the University" class="img-fluid mx-auto d-block" style="max-height:350px; max-width:420px">
+              <div class="details">
+                <h3>DR. AHMED TOUFIK OUALID</h3>
+                <p>Director of the Higher Normal School of Oran (ENSO), Oran</p>
+                <!--<div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>-->
+              </div>
+            </div>
+          </div>
+		  <!--<div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/prof_fatiha_kaid.jpg" alt="Pr. Fatiha KAID BERRAHAL" class="img-fluid mx-auto d-block" style="max-height:350px; max-width:420px">
+              <div class="details">
+                <h3>Pr. Fatiha KAID BERRAHAL</h3>
+                <p>Higher Normal School of Oran, Oran</p>
+                <!--<div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>-->
+            <!--  </div>
+            </div>
+          </div>-->
+		  
+		  <!--<div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/prof_souhila_soltani.jpg" alt="Pr. Souhila SOLTANI" class="img-fluid mx-auto d-block" style="max-height:350px; max-width:420px">
+              <div class="details">
+                <h3>Pr. Souhila SOLTANI</h3>
+                <p>Higher Normal School of Oran, Oran</p>
+                <!--<div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>-->
+          <!--    </div>
+            </div>
+          </div>-->
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/rector2.png" alt="Pr. Mouchaal Younes" class="img-fluid mx-auto d-block" style="max-height:350px; max-width:420px">
+              <div class="details">
+                <h3>Pr. Mouchaal Younes</h3>
+                <p>Rector of the Mustapha Stambouli University, Mascara</p>
+                <!--<div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>-->
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/rector3.jpg" alt="Pr. Amine Abdelmalek" class="img-fluid mx-auto d-block" style="max-height:350px; max-width:420px">
+              <div class="details">
+                <h3>Pr. Amine Abdelmalek</h3>
+                <p>Rector of the Oran1 University, Oran</p>
+                <!--<div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>-->
+              </div>
+            </div>
+          </div>
+          <!--<div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/unknown_member.jpg" alt="Pr. Vice-Rector" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:320px">
+              <div class="details">
+                <h3>Pr. Vice-Rector </h3>
+                <p>Vice-Rector, Oran University, Oran</p>
+        
+              </div>
+            </div>
+          </div>
+		  
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/unknown_member.jpg" alt="Dr. Dean" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:320px">
+              <div class="details">
+                <h3>Dr. Dean of SE Faculty </h3>
+                <p>Dean of the Exacte Sciences Faculty, Oran University, Oran</p>
+                
+              </div>
+            </div>
+          </div>-->
+		</div>
+	</div>
+	</section>
+		<!-------------------------- END honorary chairs -------------------------->
+		
+		<!-------------------------- general chairs -------------------------->
+	<section id="gcommittees" class="wow fadeInUp">
+      <div class="container">
+			<div class="section-header">
+				<h3>General Chairs</h3>
+				<!--<p>Here are some of our speakers</p>-->
+			</div>
+		
+		
+		<div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/hamdadou2.jpg" alt="Pr. Djamila HAMDADOU" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Pr. Djamila HAMDADOU</h3>
+                <p>LIO Laboratory, University of Oran 1</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/he_zahaf.jpg" alt="Pr. Houssam Eddine ZAHAF" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Pr. Houssam Eddine ZAHAF</h3>
+                <p>University of Nantes</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/prof_c-t-calafate.jpg" alt="Pr. Carlos Tavares Calafate" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Pr. Carlos Tavares Calafate </h3>
+                <p>Technical University of Valencia (UPV), Spain</p>
+                
+              </div>
+            </div>
+          </div>
+		  
+		  
+        </div>
+	</div>
+	</section>
+		<!-------------------------- END general chairs -------------------------->
+		
+				<!-------------------------- Honory Organising Board -------------------------->
+	<section id="ocommittees" class="wow fadeInUp">
+      <div class="container">
+			<div class="section-header">
+				<h3>Honory Organising Board</h3>
+				<!--<p>Here are some of our speakers</p>-->
+			</div>
+		
+		
+		<div class="row justify-content-center">
+		
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/prof_souhila_soltani.jpg" alt="Pr. Souhila SOLTANI" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Pr. Souhila SOLTANI</h3>
+                <p>ENSO, Algeria</p>
+                
+              </div>
+            </div>
+          </div>
+		  
+		  		  
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/prof_fatiha_kaid.jpg" alt="Pr. Fatiha KAID BERRAHAL" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Pr. Fatiha KAID BERRAHAL</h3>
+                <p>Higher Normal School of Oran, Algeria</p>
+                
+              </div>
+            </div>
+          </div>
+		</div>
+
+		
+	</div>
+	</section>
+		<!-------------------------- END Honory Organising Board -------------------------->
+		
+		
+		<!-------------------------- organisation chairs -------------------------->
+	<section id="ocommittees" class="wow fadeInUp">
+      <div class="container">
+			<div class="section-header">
+				<h3>Organization Chairs</h3>
+				<!--<p>Here are some of our speakers</p>-->
+			</div>
+		
+		
+		<div class="row justify-content-center">
+		
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/kaouter_labed.jpg" alt="Dr. Kaouter LABED" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Dr. Kaouter LABED</h3>
+                <p>ENSO, Algeria</p>
+                
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/cherifa_boudia.jpg" alt="Dr. Cherifa BOUDIA" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Dr. Cherifa BOUDIA</h3>
+                <p>University of Mascara, Algeria</p>
+                
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/hala_benzine.jpg" alt="Dr. Hala BEZINE" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3> Dr. Hala BEZINE</h3>
+                <p>University of Sfax, Tunisia</p>
+                
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/prof_ricardo_aler_mur.jpg" alt="Pr. RICARDO ALER MUR" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Pr. RICARDO ALER MUR</h3>
+                <p>Universitad Madrid, Spain</p>
+                
+              </div>
+            </div>
+          </div>
+		  </div>
+		 <!-- <div class="row justify-content-center">
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/zm.jpg" alt="Dr. Mohammed ZAGANE" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Dr. Mohammed ZAGANE</h3>
+                <p>University of Mascara, Algeria</p>
+                
+              </div>
+            </div>
+          </div>
+		  </div>-->
+		  
+          
+		  
+		  <!--<div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/mohamed_aymen_labiod.png" alt="Dr. Mohamed Aymen Labiod " class="img-fluid mx-auto d-block" style="max-height:250px; max-width:350px">
+              <div class="details">
+                <h3>Dr. Mohamed Aymen LABIOD </h3>
+                <p>University of Paris-Est Créteil (UPEC), France</p>
+                
+              </div>
+            </div>
+          </div>
+		  
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/salim_bitam.jpg" alt="Pr. Salim Bitam" class="img-fluid mx-auto d-block" style="max-height:250px; max-width:300px">
+              <div class="details">
+                <h3>Pr. Salim BITAM</h3>
+                <p>University of Biskra, Algeria</p>
+                
+              </div>
+            </div>
+          </div> 
+		  
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              
+              <div class="details">
+                <h3> </h3>
+                <p> </p>
+                
+              </div>
+            </div>
+          </div>-->
+		  <div class="row justify-content-center">
+		  <div class="col-lg-6 col-md-8">
+				<div class="section-header">
+				<br>
+				<br>
+				<h3>Organization Committee</h3>
+				</div>
+					<ul>
+						
+						  <li>Dr. Fethi Nedale LATTAB, University of Oran 1 Ahmed Ben Bella, Algeria</li>
+						  <li>Dr. Mohammed ZAGANE, Mustapha Stambouli University of Mascara, Algeria</li>
+						  <li>Dr. Mokhtar BERRAHAL, Higher Normal School of Oran, Algeria</li> 
+						  <li>Dr. Bahia MAACHI, Higher Normal School of Oran, Algeria</li> 
+						  <li>Dr. Sihem SEMMAR, Higher Normal School of Oran, Algeria</li> 
+						  <li>Dr. Rabiaa ZITOUNI, University of Sfax, Tunisia</li>
+						  <li>Dr. Sarra ABBOU, University of Science and Technology of Oran Mohamed-Boudiaf, Algeria</li> 
+						  <li>Dr. Brahim CHEROUATI, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Dr. Abdellah KHELIL, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Dr. Ahmed BOUDAIB, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Dr. Sabrina ABID, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Dr. Faiza MAHI, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Dr. Rachid KHALLADI, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Dr. Mohammed HADJARI, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Dr. BENDOUDA Djamila, National Higher School of Advanced Technologies, Algeria</li>
+						  <li>Dr. KHALDI Brahim, Mustapha Stambouli University of Mascara, Algeria</li>						  
+						  <li>Dr. OULADDJEDID Lakhdar, Amar Telidji University of Laghouat, Algeria</li> 
+						  <li>Dr. BAKHTI Benaoumeur, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Dr. Sana TRIGUI, University of Sfax, Tunisia </li>
+						  <li>Dr. Benameur Rabaie, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+						  <li>Dr. SETTI AHMED Soraya, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Pr. BITAM Salim, Mohamed Khider University of Biskra, Algeria</li> 
+						  <li>Dr. LABIOD Mohamed Aymen, Paris-Est Créteil University, France</li> 
+						  <li>Dr. SOUIHI Sami, Paris-Est Créteil University, France</li> 
+						  <li>Dr. TEGGAR Hamza, Mustapha Stambouli University of Mascara, Algeria</li> 
+						  <li>Dr. AZZAZ Amina, Djillali Liabes University of Sidi Bel Abbes, Algeria</li> 
+						  <li>Dr. Souad MADOURI, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+						  <li>Dr. Kaouther MAKHLOUF, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+						  <li>Dr. Mohamed Amine BENADDA, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+						  <li>Dr. Rostoum NIBOUCHA, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+						  <li>Dr. Amine BOUAMER, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+						  <li>Dr. Saim KADARIA, University of Oran 1 Ahmed Ben Bella, Algeria</li>
+						  <li>Dr. Mariam ZOUARI, University of Sfax, Tunisia </li>
+					</ul>
+			</div>
+			</div>
+          
+        
+		
+	</div>
+	</section>
+		<!-------------------------- END organisation chairs -------------------------->
+		
+		<!-------------------------- Program chairs -------------------------->
+	<section id="pcommittees" class="wow fadeInUp">
+      <div class="container">
+			<div class="section-header">
+				<h3>Program chairs</h3>
+				<!--<p>Here are some of our speakers</p>-->
+			</div>
+		
+		
+		<div class="row justify-content-center">
+		
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/belalem.jpg" alt="Pr. Ghalem BELALEM" class="img-fluid mx-auto d-block" style="max-height:275px; max-width:320px">
+              <div class="details">
+                <h3>Pr. Ghalem BELALEM</h3>
+                <p>University of Oran 1</p>
+                
+              </div>
+            </div>
+          </div>
+		  
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/benhaoua.jpg" alt="Pr. Kamel BENHAOUA" class="img-fluid mx-auto d-block" style="max-height:275px; max-width:320px">
+              <div class="details">
+                <h3>Pr. Kamel BENHAOUA</h3>
+                <p>University of Mascara</p>
+                
+              </div>
+            </div>
+          </div>
+          
+		  
+		  <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/dahane.jpg" alt="Dr. Amine DAHANE" class="img-fluid mx-auto d-block" style="max-height:275px; max-width:320px">
+              <div class="details">
+                <h3>Dr. Amine DAHANE</h3>
+                <p>University of Oran 1</p>
+                
+              </div>
+            </div>
+          </div>
+		  
+		   <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/members/prof_karim_bouamrane.png" alt="Pr. Karim BOUAMRANE" class="img-fluid mx-auto d-block" style="max-height:275px; max-width:320px">
+              <div class="details">
+                <h3>Pr. Karim BOUAMRANE</h3>
+                <p>University of Oran 1</p>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+	</div>
+	</section>
+		<!-------------------------- END program chairs -------------------------->
+
+    
+    <section id="committeesdetails" class="wow fadeInUp">
+      <div class="container">
+	  
+			
+            <div class="section-header">
+				<h3>Technical Program Committee</h3>
+			</div>
+			<div class="col-lg-6 col-md-8 mx-auto">
+				
+				<ul>
+				  
+				  
+				  <li>Pr. Abdallah Kouzou, Ziane Achour University of Djelfa, Algeria</li>
+				  <li>Dr. Hala BEZINE, University of Sfax, Tunisia</li> 
+				  <li>Dr. Mohammed ZAGANE, Mustapha Stambouli University of Mascara, Algeria</li>
+				  <li>Pr. Abdelghani Aissaoui, Tahri Mohammed University of Béchar, Algeria</li> 
+				  <li>Pr. Abdelhamid Iratni, Mohamed El Bachir El Ibrahimi University of Bordj Bou Arreridj, Algeria</li> 
+				  <li>Pr. Ahmed Hafaifa, Ziane Achour University of Djelfa, Algeria</li>
+				  <li>Dr. Salah Khennouf, Mohamed Boudiaf University of M'Sila, Algeria</li> 
+				  <li>Dr. Belgacem Said Khaldi, Ziane Achour University of Djelfa, Algeria</li>
+				  <li>Pr. Fatma Zohra Chelali, University of Science and Technology Houari Boumediene, Algeria</li> 
+				  <li>Dr. Ameur Miloud Kaddouri, Ziane Achour University of Djelfa, Algeria</li>
+				  <li>Dr. Khalil Tamersit, University of Guelma, Algeria</li>
+				  <li>Pr. Noureddine Chaib, Amar Telidji University of Laghouat, Algeria</li>
+				  <li>Pr. Said Drid, University of Batna 2, Algeria</li> 
+				  <li>Pr. Bilal Attallah, Mohamed Boudiaf University of M'Sila, Algeria</li>
+				  <li>Pr. Kaouter LABED, University of Science and Technology of Oran Mohamed-Boudiaf, Algeria</li> 
+				  <li>Dr. Ghania KHENSOUS, Higher Normal School of Oran, Algeria</li> 
+				  <li>Dr. Fatima Zohra BENKEDDOUR, Higher Normal School of Oran, Algeria</li> 
+				  <li>Pr. Naima BELAYACHI, University of Orléans, France</li> 
+				  <li>Dr. Amine Dahane, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. Houssam-Eddine Zahaf, Nantes University, France</li> 
+				  <li>Dr. Bouziane Brik, University of Burgundy, France</li> 
+				  <li>Dr. Nassim Amalou, Nantes University, France</li> 
+				  <li>Pr. Carlos T. Calafate, Polytechnic University of Valencia, Spain</li> 
+				  <li>Pr. Benhaoua Mohammed Kamal, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Pr. Karim Bouamrane, University of Oran 1 Ahmed Ben Bella, Algeria</li>
+				  <li>Dr. Dahane Miloud, University of Oran 1 Ahmed Ben Bella, Algeria</li>
+				  <li>Dr. Audrey Queudet, Nantes University, France</li> 
+				  <li>Dr. Boudia Cherifa, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Asmaa Bengueddach, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. Djamila Bendouda, National Higher School of Advanced Technologies, Algeria</li> 
+				  <li>Pr. Djamila Hamdadou, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. Faiza Mahi, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Benameur Rabaie, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Pr. Ghalem Belalem, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. Mostefa Masmoudi, Advanced Technologies Development Center, Algeria</li> 
+				  <li>Dr. Nicola Capodieci, University of Modena and Reggio Emilia, Italy</li>
+				  <li>Pr. Omar Rafik Merad-Boudia, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. Sid Ahmed Makhlouf, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. ElYasmine Ait Si Larbi, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. Amin Benabbou, Ibn Khaldoun University of Tiaret, Algeria</li> 
+				  <li>Dr. Khadidja Yahyaoui, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Meriem Meddeber, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Pr. Fatiha Barigou, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. Stephane Rubini, University of Western Brittany, France</li> 
+				  <li>Dr. Jorge Luis Zambrano-Martinez, University of Azuay, Ecuador</li> 
+				  <li>Pr. Pietro Manzoni, Polytechnic University of Valencia, Spain</li> 
+				  <li>Dr. Hayat Meddeber, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Benmohammed Mohammed, Constantine 2 University Abdelhamid Mehri, Algeria</li>
+				  <li>Dr. Setti Ahmed Soraya, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Bouhalouane Mokhtar, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. Hadya Boufera, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Slimani Yahya, University of Manouba, Tunisia</li> 
+				  <li>Dr. KHALDI Brahim, Mustapha Stambouli University of Mascara, Algeria</li>	
+				  <li>Dr. Zekri Lougmiri, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				  <li>Dr. Abdessamed Ouessai, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Djamel Hamdadou, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Samir Setaouti, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Brahim Cherouati, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Chaoui Nabila, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Rebbah Mohammed, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Khalladi Rachid, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Zahia Marouf, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Debbat Fatima, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Abid Sabrina, Mustapha Stambouli University of Mascara, Algeria</li> 
+				  <li>Dr. Oussama Annad, National Higher School of Advanced Technologies, Algeria</li> 
+				  <li>Pr. Tlemsani Redouane, University of Science and Technology of Oran Mohamed-Boudiaf, Algeria</li> 
+				  <li>Dr. Nasser Soraya, Higher School of Biological Sciences of Oran, Algeria</li> 
+				  <li>Dr. Belbachir Khadidja, University of Science and Technology of Oran Mohamed-Boudiaf, Algeria</li> 
+				  <li>Dr. Asmaa OURDIGHI, University of Science and Technology of Oran Mohamed-Boudiaf, Algeria</li>
+				  <li>Dr. Djilali Benmahamed, Sonatrach, Algeria</li> 
+				  <li>Pr. Pierre Boulet, University of Lille, France</li> 
+				  <li>Pr. Giuseppe Lipari, University of Lille, France</li> 
+				  <li>Pr. Johann Marquez-Barja, University of Antwerp, Belgium</li> 
+				  <li>Pr. Mariusz Glabowski, Poznan University of Technology, Poland</li> 
+				  <li>Dr. Valeria Loscri, Inria Lille - Nord Europe, France</li> 
+				  <li>Pr. Sidi Mohamed Mahmoudi, University of Mons, Belgium</li> 
+				  <li>Pr. Congduc Pham, University of Pau, France</li> 
+				  <li>Pr. Smail Niar, Polytechnic University of Hauts-de-France, France</li> 
+				  <li>Dr. Youcef Bentoutou, Satellite Development Center, Algerian Space Agency, Algeria</li> 
+				  <li>Pr. Jaime Lloret Mauri, Polytechnic University of Valencia, Spain</li> 
+				  <li>Pr. Fulvio Risso, Polytechnic University of Turin, Italy</li> 
+				  <li>Dr. Philippe Devienne, CNRS / University of Lille, France</li> 
+				  <li>Dr. Abdoulaye Gamatie, CNRS / University of Montpellier, France</li> 
+				  <li>Pr. Antonio Skarmeta Gomez, University of Murcia, Spain</li> 
+				  <li>Pr. Okba Kazar, University of Biskra, Algeria</li>
+				  <li>Pr. Souhila SOLTANI, Higher Normal School of Oran, Algeria</li> 
+				  <li>Pr. Fatiha KAID BERRAHAL, Higher Normal School of Oran, Algeria</li> 
+				  <li>Pr. Ricardo ALER MUR, Carlos III University of Madrid, Spain</li>
+				  <li>Dr. Salem HEBRI, Higher Normal School of Oran, Algeria</li> 
+				  <li>Pr. Zohra LABED, Higher Normal School of Oran, Algeria</li> 
+				  <li>Dr. Nawel ABDEREBI, Higher Normal School of Oran, Algeria</li>
+				  <li>Dr. Rabiaa ZITOUNI, University of Sfax, Tunisia</li>
+                  <li>Dr. Mariam ZOUARI, University of Sfax, Tunisia </li>
+                  <li>Dr. Sana TRIGUI, University of Sfax, Tunisia </li>
+				  <li>Dr. Fatma BEN SAID, University of Sfax, Tunisia</li>
+                  <li>Dr. Sahar CHERIF, University of Sfax, Tunisia</li>
+				
+				</ul>
+
+		   </div>
+		   <br>
+	  
+			<div class="section-header">
+				<h3>Poster section Chairs</h3>
+				<!--<p>Here are some of our speakers</p>-->
+			</div>
+			<div class="col-lg-6 col-md-8 mx-auto">
+			<ul >
+				
+				<li>Dr. Ghania Khensous, Higher Normal School of Oran, Algeria</li> 
+				<li>Pr. Naima BELAYACHI, University of Orléans, France</li> 
+				<li>Dr. Sabrina ABID, Mustapha Stambouli University of Mascara, Algeria</li> 
+				<li>Dr. ElYasmine Ait Si Larbi, University of Oran 1 Ahmed Ben Bella, Algeria</li>
+			</ul> 
+			</div>
+			<br>
+			<div class="section-header">
+				<h3>IEEE Publication chairs</h3>
+				<!--<p>Here are some of our speakers</p>-->
+			</div>
+  
+			<div class="col-lg-6 col-md-8 mx-auto"><ul>
+				
+				
+				<li>Pr. Omar Rafik Merad-Boudia, University of Oran 1 Ahmed Ben Bella, Algeria</li> 
+				<li>Dr. Salem HEBRI, Higher Normal School of Oran, Algeria</li> 
+				<li>Dr. Meriem MEDDEBER, Mustapha Stambouli University of Mascara, Algeria</li> 
+				<li>Dr. Fatima Zohra BENKEDDOUR, Higher Normal School of Oran, Algeria</li>
+			</ul></div>
+			
+			<br>
+			<div class="section-header">
+				<h3>Visibility and publicity  chairs</h3>
+				<!--<p>Here are some of our speakers</p>-->
+			</div>
+  
+			<div class="col-lg-6 col-md-8 mx-auto"><ul>
+				
+				
+				<li>Pr. Zohra LABED, Higher Normal School of Oran, Algeria</li> 
+				<li>Dr. Nawel ABDEREBI, Higher Normal School of Oran, Algeria</li> 
+				
+			</ul></div>
+			<br>
+			<!--
+			<br>
+			<div class="section-header">
+				<h3>Tresory  chair</h3>
+				
+			</div>
+  
+			<div class="col-lg-6 col-md-8 mx-auto"><ul>				
+				<li>Pr. Souhila SOLTANI, Higher Normal School of Oran, Algeria</li> 
+				
+			</ul></div>
+			<br>
+             -->
+  
+			<div class="section-header">
+				<h3>Steering committee :</h3>
+			</div>
+				  <div class="col-lg-6 col-md-8 mx-auto"><ul>
+					<li>Pr. Amit Kumar Singh, University of Essex, United Kingdom</li> 
+					<li>Pr. Carlos Tavares Calafate, Polytechnic University of Valencia, Spain</li> 
+					<li>Pr. Benaoumeur Senouci, University of Southern Denmark, Denmark</li>
+					<li>Dr. Houssam-Eddine Zahaf, Nantes University, France</li> 
+					<li>Dr. Bouziane Brik, Bourgogne University, France</li>
+					<li>Dr. Mohammed Zagane, Mustapha Stambouli University of Mascara, Algeria</li> 
+					<li>Pr. Abdelhamid Mellouk, Paris-Est Créteil University, France</li>
+					<li>Dr. Mohamed Cheriet, École de technologie supérieure, University of Quebec, Canada</li> 
+					<li>Dr. Dongkyun Kim, Kyungpook National University, South Korea</li> 
+					<li>Dr. Celimuge Wu, University of Electro-Communications, Japan</li> 
+					<li>Dr. Min Chen, Huazhong University of Science and Technology, China</li> 
+					<li>Dr. Wanli Chang, University of York, United Kingdom</li>
+					<li>Dr. Chaker Abdelaziz Kerrache, Amar Telidji University of Laghouat, Algeria</li> 
+					<li>Dr. Mohammad Abdullah Al Faruque, University of California, Irvine, United States</li> 
+					<li>Pr. Krismadinata, Padang State University, Indonesia</li> 
+					<li>Pr. Mounir Mokhtari, Institut Mines-Télécom, France</li> 
+					<li>Pr. Chafiaa Hamitouche, IMT Atlantique, France</li> 
+					<li>Pr. Ricardo Aler Mur, Carlos III University of Madrid, Spain</li>
+				  </ul> </div>
+	
+  
+		</div>
+	</section>
+
+
+	
+	
+	<!--===================== END COMMITTEES SECTION ============================
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Keynote Speakers</h2>
+          <p>Will be annouced later..</p>
+        </div>
+
+        
+		  
+       
+      </div>
+
+    </section>
+	
+	<!--========= END SPEAKERS SECTION ================================
+	
+	<!--==========================
+      CFP Section
+    ============================-->
+    <section id="cfp" class="wow fadeInUp ">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>CFP </h2>
+		  
+        </div>
+		
+		<p class="text-justify">
+		Artificial Intelligence (AI) and Cyber-Physical Systems (CPS) are at the forefront of technological innovation, transforming industries and revolutionizing critical sectors. AI, with its ability to process vast amounts of data and learn from patterns, is enhancing decision-making, automating complex tasks, and driving efficiency. CPS, which integrates physical systems with digital computing, enables real-time monitoring, control, and optimization of processes in diverse applications. Together, AI and CPS are reshaping the way industries operate, enhancing safety, efficiency, and resilience in our interconnected world.
+		</p>
+		<p class="text-justify"><strong>AICPS'2026</strong> aims to bring together researchers, academics, engineers, and industry professionals in the fields of AI and CPS to share groundbreaking work and explore the latest advancements. <strong> AICPS'2026</strong> invites participants to submit original, unpublished papers on topics related to the conference, including but not limited to:</p>
+
+        <div class="row justify-content-center " >
+          <div class="col-lg-9">
+              <ul id="faq-list" style="color:black;">
+
+                <li>
+                  <p data-toggle="collapse" class="collapsed" href="#faq1" >IoT Ecosystem: From Devices to Edge and Cloud Integration <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq1" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                      Explores the interconnectedness of IoT devices, edge computing, and cloud platforms, focusing on data flow, security, and scalability.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <p data-toggle="collapse" href="#faq2" class="collapsed">Advanced Sensors and Sensing Technologies<i class="fa fa-plus-circle"></i></p>
+                  <div id="faq2" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                      Covers cutting-edge sensor technologies, including their design, fabrication, and applications in various fields, such as healthcare, environment, and industry.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <p data-toggle="collapse" href="#faq3" class="collapsed">Innovative Circuits and Systems for AI and IoT Applications<i class="fa fa-plus-circle"></i></p>
+                  <div id="faq3" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                      Discusses the development of efficient and low-power circuits and systems to support AI and IoT applications, including hardware accelerators and embedded systems.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <p data-toggle="collapse" href="#faq4" class="collapsed">Next-Generation Communications, Connectivity, and Networking<i class="fa fa-plus-circle"></i></p>
+                  <div id="faq4" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                      Explores emerging technologies like 5G, 6G, and beyond, focusing on high-speed data transmission, low-latency communication, and network security.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <p data-toggle="collapse" href="#faq5" class="collapsed">Big Data, Data Engineering, and Advanced Analytics <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq5" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                     Covers techniques for processing, analyzing, and extracting insights from large and complex datasets, including data mining, machine learning, and data visualization.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <p data-toggle="collapse" href="#faq6" class="collapsed">Artificial Intelligence, Machine Learning, and Cognitive Computing <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq6" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                      Explores the development and application of AI techniques, such as deep learning, natural language processing, and computer vision, to solve complex problems.
+                    </p>
+                  </div>
+                </li>
+				
+				<li>
+                  <p data-toggle="collapse" class="collapsed" href="#faq7"> Blockchain and Distributed Ledger Technologies <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq7" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                      Discusses the principles, applications, and challenges of blockchain technology, including its use in finance, supply chain management, and healthcare.
+                    </p>
+                  </div>
+                </li>
+				
+				<li>
+                  <p data-toggle="collapse" class="collapsed" href="#faq8"> Design Automation in the Era of AI & IoT: From Silicon to Systems <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq8" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                      Explores the use of AI and automation tools to design complex integrated circuits and systems, accelerating the development of innovative products.
+                    </p>
+                  </div>
+                </li>
+				
+				<li>
+                  <p data-toggle="collapse" class="collapsed" href="#faq9"> Cybersecurity and Privacy Solutions <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq9" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                    Covers the latest techniques and strategies for protecting digital systems and data from cyber threats, including encryption, intrusion detection, and privacy-preserving technologies.  
+                    </p>
+                  </div>
+                </li>
+				
+				<li>
+                  <p data-toggle="collapse" class="collapsed" href="#faq10"> Intelligent Robotics and Autonomous Systems <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq10" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                    Explores the development of intelligent robots and autonomous systems, including their applications in manufacturing, healthcare, and transportation.  
+                    </p>
+                  </div>
+                </li>
+				
+				<li>
+                  <p data-toggle="collapse" class="collapsed" href="#faq11"> Emerging Applications, Processes, and Digital Services <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq11" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                    Discusses innovative applications and services enabled by emerging technologies, such as the Internet of Things, artificial intelligence, and blockchain.  
+                    </p>
+                  </div>
+                </li>
+				
+				<li>
+                  <p data-toggle="collapse" class="collapsed" href="#faq12"> Advanced Computer Architectures and Embedded Systems <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq12" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                    Explores the design and optimization of computer architectures and embedded systems for high-performance and energy-efficient computing.  
+                    </p>
+                  </div>
+                </li>
+				
+				<li>
+                  <p data-toggle="collapse" class="collapsed" href="#faq13"> Bio-Informatics <i class="fa fa-plus-circle"></i></p>
+                  <div id="faq13" class="collapse" data-parent="#faq-list">
+                    <p style="color:darkblue;">
+                    Covers the application of computational techniques to analyze and interpret biological data, including genomics, proteomics, and bioinformatics.  
+                    </p>
+                  </div>
+                </li>
+              </ul>
+			  <p class="text-justify">To download the CFP's PDF file, please click <a href="cfp.pdf" target="_blank">here</a>
+				</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+	
+	<!--======================== END CFP SECTION ========================================
+	
+	<!--==========================
+      submission Section
+    ============================-->
+    <section id="submission" class="wow fadeInUp ">
+
+      <div class="container">
+
+        <div class="section-header">
+			<h2>Submission </h2>
+		</div>  
+		  
+		  
+			<h3>Submission Guidelines</h3>
+				<p class="text-justify">All papers must be original and should not be under consideration for publication in any other journal or conference. The initial submission for review will be limited to six (06) pages, including references, figures, and tables (in at least 10pt font and 2-column format). </p>
+				
+				<p class="text-justify">
+				
+				IEEE LaTeX and Microsoft Word templates, as well as formatting instructions, are available online on the following URL : <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">(https://www.ieee.org/conferences/publishing/templates.html).</a>
+                  
+				</p>
+				<p class="text-justify">
+				Accepted papers will be submitted for inclusion in IEEE Xplore, subject to meeting IEEE Xplore’s scope and quality requirements.</p>
+				<p class="text-justify">To submit your paper, please click <a href="" target="_blank">here</a>
+				</p>
+				
+				<!--<p class="text-justify">
+				The Microsoft Conference Management Toolkit (CMT) service will be used for managing the peer review process for this conference. This service is provided free of charge by Microsoft to support the global research community.
+				</p>-->
+			<h3>ACKNOWLEDGMENT</h3>
+			<p class="text-justify">
+			The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support. 
+			</p>
+        
+	  </div>
+	</section>
+	
+	
+	<!--==========================
+      Special Issues Section
+    ============================-->
+    <section id="specialissues" class="wow fadeInUp ">
+
+      <div class="container">
+
+        <div class="section-header">
+			<h2>Special Issues </h2>
+		</div>  
+		  
+		  
+			<h3></h3>
+				
+				
+				<!--<p class="text-justify">
+				
+				10–15 high-quality papers presented at AICPS'25 will be invited to submit extended versions for potential publication in an A-ranked Elsevier journal (Web of Science indexed): <a href="https://www.sciencedirect.com/journal/journal-of-systems-architecture" target="_blank">Journal of Systems Architecture.</a>
+                  
+				</p>
+				<p class="text-justify">
+				Another 10–15 papers will have the opportunity to submit to a B-ranked Inderscience journal (Scopus indexed): <a href="https://www.inderscience.com/jhome.php?jcode=ijhpsa" target="_blank">International Journal of High Performance Systems Architecture.</a>
+				</p>
+				-->
+				<p class="text-justify">
+				A selection of high-quality papers presented at AICPS'26 will be invited to submit extended versions for potential publication in top-tier journals published by renowned publishers such as Elsevier, ACM, and Inderscience. These journals are indexed in leading databases and maintain rigorous peer-review standards, ensuring broad visibility and academic impact.
+				</p>
+				<p class="text-justify">
+				This is an excellent opportunity for authors to achieve both an IEEE Xplore-indexed conference paper and a journal publication.
+				</p>
+        
+	  </div>
+	</section>
+	
+	
+	<!--==========================
+      Important Dates Section
+    ============================-->
+    <section id="dates" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Important Dates</h2>
+          <p></p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Paper Submission Deadline</h3>
+              <!--<p style="text-decoration: line-through;"><strong>June 01, 2025</strong></p>-->
+			  <p style="color:green;"><strong>September 20, 2026</strong></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Notification of Acceptance</h3>
+			  <!--
+			  <p style="text-decoration: line-through;"><strong>July 15, 2025</strong></p>
+			  <p style="text-decoration: line-through;"><strong>September 20, 2025</strong></p>
+			  -->
+              <p style="color:green;"><strong>October 30, 2026</strong></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Camera-Ready Paper Deadline</h3>
+			  <!--
+			  <p style="text-decoration: line-through;"><strong>September 20, 2025</strong></p>
+			  <p style="text-decoration: line-through;"><strong>October 10, 2025</strong></p>
+              -->
+			  
+			  <p style="color:green;"><strong>November 30, 2026</strong></p>
+            </div>
+          </div>
+		</div>
+		<div class="row contact-info">
+		
+		  <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+		  <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Conference</h3>
+              <p style="color:green;"><strong>December 14-15, 2026</strong></p>
+            </div>
+          </div>
+		  
+		  <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #Important Dates -->
+
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Conference Program</h2>
+		</div>
+          
+
+		    <p class="text-justify"> Will be annouced later ..
+				</p>
+        
+<!--
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Day 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Day 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Day 3</a>
+          </li>
+        </ul>
+
+        <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+          necessitatibus voluptatem quis labore perspiciatis quia.</h3>
+
+        <div class="tab-content row justify-content-center">
+
+
+          <!-- Schdule Day 1 -->
+		  <!--
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Keynote <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+		  
+		  <!--
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+
+        </div>
+
+      </div>
+
+    </section>
+	
+	<!--==========================
+      Register Section
+    ============================-->
+    <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Registration</h2>
+          <p>Please complete your registration by filling out the form accessible via the Register Now button below. Your information will help us confirm your participation and share important updates regarding the conference. We encourage early registration to facilitate smooth organization.</p>
+        </div>
+		
+		<div class="row ">	
+			<div class="col-lg-5"> 
+			   <p>Registration Fees :</p>
+			</div>
+		</div>	
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Non IEEE Member</h5>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>National academics: 18 000 DZD </li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>National students (*): 15 000 DZD </li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>National industrial: 20 000 DZD </li>
+				  <li><span class="fa-li"><i class="fa fa-check"></i></span>International academics: 200 Euros </li>
+                  
+                  
+                </ul>
+                <hr>
+				<p>
+			   (*) A document proving the student's position must be provided. In addition, the student concerned must be the first author of the article. 
+			   </p>
+				
+                <div class="text-center">
+                  <a href="#" ><button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Register now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">IEEE Member</h5>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>National academics: 15 000 DZD</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>National students (*): 10 000 DZD</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>International academics (**): 150 Euros</li>
+                  
+                </ul>
+                <hr>
+				
+				<p>
+			   (*) A document proving the student's position must be provided. In addition, the student concerned must be the first author of the article. 
+			   </p>
+			   <p>
+			   (**) A document proving the IEEE membership must be provided.
+			   
+			   </p>
+			   
+                <div class="text-center">
+                  <a href="#" ><button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Register now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  
+			   
+               
+
+          
+      <!-- Modal Order Form -->
+	  <!--
+      <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <select id="ticket-type" name="ticket-type" class="form-control" >
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+-->
+    </section>
+
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>Oran City</h2>
+		  
+		</div>
+          <p>Oran city location info and gallery</p>
+        
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map">
+            <iframe src="https://www.google.com/maps/place/Oran/@35.6336643,-0.4389637,10.38z/data=!4m6!3m5!1s0xd7e8854841f537d:0x4187f63762f7290f!8m2!3d35.6987388!4d-0.6349319!16zL20vMDEyZ2c2" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <h3>Oran, Algeria</h3>
+                <p>
+					Oran, Algeria’s second largest city, covers more than 2,000 km² and lies along the Mediterranean coast. It is bordered by Ain Temouchent to the west, Sidi Bel Abbès and Mascara to the south, and Mostaganem to the east. As a coastal city, Oran stretches along a beautiful 120 km shoreline, combining vibrant urban life with scenic seaside landscapes.
+				</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid venue-gallery-container">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/1.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/2.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/3.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/4.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/5.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/6.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/7.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/8.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Hotels Section
+    ============================-->
+    <!--<section id="hotels" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Hotels</h2>
+          <p>Here are some nearby hotels</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img src="img/hotels/1.jpg" alt="Hotel 1" class="img-fluid">
+              </div>
+              <h3><a href="https://www.facebook.com/SarlAgremas/" target="_blank" >AGREMAS Hotel</a></h3>
+              
+              <p>0.4 Mile from the Venue</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img src="img/hotels/2.jpg" alt="Hotel 2" class="img-fluid">
+              </div>
+              <h3><a href="https://www.facebook.com/almoravideshotel/" target="_blank" >Almoravides Hotel</a></h3>
+              
+              <p>0.4 Mile from the Venue</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>-->
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    <!--<section id="gallery" class="wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Check our gallery from the recent events</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel">
+        <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/1.jpg" alt=""></a>
+        <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/2.jpg" alt=""></a>
+        <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/3.jpg" alt=""></a>
+        <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/4.jpg" alt=""></a>
+        <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/5.jpg" alt=""></a>
+        <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/6.jpg" alt=""></a>
+        <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/7.jpg" alt=""></a>
+        <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/8.jpg" alt=""></a>
+      </div>
+
+    </section>-->
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="sponsors" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+
+        <div class="row no-gutters sponsors-wrap clearfix">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="img/sponsors/enso.jpg" class="img-fluid" alt="" style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+		  
+		  <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="img/sponsors/log_univ-mascara.png" class="img-fluid" alt="" style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+		  
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="img/sponsors/univ_oran1.png" class="img-fluid" alt="" style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+		  
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="img/sponsors/labtec-ia.png" class="img-fluid" alt="" style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="img/sponsors/lio.png" class="img-fluid" alt="" style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="img/sponsors/regim_lab_tn.png" class="img-fluid" alt=""style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="img/sponsors/sfax_univ_tn.png" class="img-fluid" alt="" style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+          
+          
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="" class="img-fluid" alt="" style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+		  
+		  <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="" class="img-fluid" alt="" style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+		  
+		  <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="" class="img-fluid" alt="" style="max-width:130px; max-height:100px">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+	<!--==========================
+       Our Associates  Section
+    ============================-->
+    <section id="sponsors" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Associates</h2>
+        </div>
+
+        <div class="row no-gutters sponsors-wrap clearfix">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <a href="https://conferencealerts.co.in/" target="_blank"><img src="img/associates/conference_alerts_logo.jpg" class="img-fluid" alt="International Conferences" style="max-width:200px; max-height:100px"></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+            </div>
+          </div>
+          <!--
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="img/sponsors/4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              <img src="img/sponsors/5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+		  -->
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+             
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              
+            </div>
+          </div>
+		  
+		  <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="sponsor-logo">
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    
+
+    <!--==========================
+      Subscribe Section
+    ============================-->
+   <!-- <section id="subscribe">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Newsletter</h2>
+          <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
+        </div>
+
+        <form method="POST" action="#">
+          <div class="form-row justify-content-center">
+            <div class="col-auto">
+              <input type="text" class="form-control" placeholder="Enter your Email">
+            </div>
+            <div class="col-auto">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section> -->
+
+    
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>For general information and organizational matters, please contact us at:</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address> 02 avenue des martyrs , Oran, Algeria  </address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Conference Email:</h3>
+              <p><a href="mailto:aicps2026@univ-mascara.dz">aicps2026@univ-mascara.dz</a></p>
+			  <br>
+			  
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+ 
+
+	
+
   </main>
+
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="img/conference_logo2.png" alt="AICPS'25">
+            <p>The Second IEEE/International Conference on Artificial Intelligence and Cyber Physical Systems.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="https://www.ens-oran.dz" target="_blank">ENS Oran</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="https://labtecia.github.io/labtecia/" target="_blank">LABTEC-IA</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="https://oran.mta.gov.dz/%D9%88%D9%84%D8%A7%D9%8A%D8%AA%D9%86%D8%A7/" target="_blank">Oran in oran.mta.gov.dz</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="https://wilayaoran.dz/index.php/en/" target="_blank">Official website of Wilaya of Oran</a></li>
+              
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              <br>
+              <strong>Phone:</strong> <br>
+              <strong>Email:</strong> aicps2026@univ-mascara.dz<br>
+            </p>
+
+            <div class="social-links">           
+              <a href="https://www.facebook.com/profile.php?id=61567079515100" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/labtec-ia/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>AICPS'26</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <div class="theme-switcher" role="group" aria-label="Color theme">
+    <button type="button" class="theme-switcher__button theme-switcher__button--dark" data-theme-option="dark" aria-label="Dark colors" title="Dark colors"></button>
+    <button type="button" class="theme-switcher__button theme-switcher__button--gray" data-theme-option="gray-clear" aria-label="Clear gray colors" title="Clear gray colors"></button>
+    <button type="button" class="theme-switcher__button theme-switcher__button--blue" data-theme-option="blue-clear" aria-label="Clear blue colors" title="Clear blue colors"></button>
+    <button type="button" class="theme-switcher__button theme-switcher__button--green" data-theme-option="green-clear" aria-label="Clear green colors" title="Clear green colors"></button>
+  </div>
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  
+  <script>
+(function() {
+  const allowedParent = "https://www.univ-mascara.dz";
+
+  try {
+    // Check if the site is loaded inside an iframe
+    if (window.self !== window.top) {
+      // Check the parent frame's origin 
+      const parent = document.referrer || '';
+      if (!parent.startsWith(allowedParent)) {
+        // Not allowed → break out of the frame
+        window.top.location = window.location.href;
+      }
+    }
+  } catch (e) {
+    // If we can’t check safely, just break out of any frame
+    window.top.location = window.location.href;
+  }
+})();
+</script>
 </body>
+
 </html>
