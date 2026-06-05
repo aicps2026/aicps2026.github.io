@@ -2680,3 +2680,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: var(--theme-header-bg);
   }
 }
+
+
+#hcommittees .speaker .details,
+#ocommittees .speaker .details,
+#pcommittees .speaker .details,
+#gcommittees .speaker .details,
+#speakers .speaker .details {
+  bottom: 0;
+}
